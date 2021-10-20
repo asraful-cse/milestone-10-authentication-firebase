@@ -23,15 +23,7 @@ const Login = () => {
 
   // handle google sign in
 
-  const handleGoogleSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        console.log(result.user);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
